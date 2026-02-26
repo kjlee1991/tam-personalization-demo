@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personalization Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="headline">Welcome to Our Store</h1>
+    <p id="description">Discover our best products.</p>
+
+    <button onclick="setNewUser()">New Visitor</button>
+    <button onclick="setReturningUser()">Returning User</button>
+
+    <div class="product">
+      <h2>Premium Headphones</h2>
+      <button id="cta" onclick="trackClick()">Buy Now</button>
+    </div>
+
+    <p id="log"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
