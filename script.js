@@ -57,3 +57,30 @@ document.getElementById("cta").addEventListener("click", async () => {
   document.getElementById("log").innerText =
     "Conversion tracked for variation " + activeVariation;
 });
+
+//Manual Variation Button Changes
+document.getElementById("variationA").addEventListener("click", () => {
+applyVariation("A");
+});
+
+document.getElementById("variationB").addEventListener("click", () => {
+applyVariation("B");
+});
+
+//Apply Variation Function
+function applyVariation(key){
+
+  if(key=="A"){
+    document.getElementById("description").innerText = "Variation Button A Clicked";
+    console.log(`Variation ${key} applied`);
+  }
+  else{
+    document.getElementById("description").innerText = "Variation Button B Clicked";
+    console.log(`Variation ${key} applied`);
+  }
+
+}
+
+
+
+
